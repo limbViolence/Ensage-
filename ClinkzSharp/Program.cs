@@ -15,7 +15,7 @@ namespace ClinkzSharp
 
 
         private static Ability _strafe, _arrows;
-        private static Item _bkb, _orchid, _hex;
+        private static Item _bkb, _orchid, _hex, _medallion;
         private static readonly Menu Menu = new Menu("ClinkzSharp", "clinkzsharp", true, "npc_dota_hero_Clinkz", true);
         private static Hero _me, _target;
         private static bool _autoKillz;
@@ -36,6 +36,7 @@ namespace ClinkzSharp
             var dict = new Dictionary<string, bool>
             {
                 {"item_black_king_bar", true },
+                { "item_medallion", true },
                 { "item_orchid", true },
                 { "item_sheepstick", true }
             };
@@ -72,6 +73,9 @@ namespace ClinkzSharp
 
             if (_orchid == null)
                 _orchid = _me.FindItem("item_orchid");
+
+            if (_medallion == null)
+                _medallion = _me.FindItem("item_medallion");
 
             if (!_menuvalueSet)
             {
@@ -114,6 +118,10 @@ namespace ClinkzSharp
             if (_hex == null || !_hex.CanBeCasted() || !_menuValue.IsEnabled(_hex.Name) || !Utils.SleepCheck("_hex")) return;
             _hex.UseAbility(_target);
             Utils.Sleep(150 + Game.Ping, "_hex");
+
+            if (_medallion == null || !_medallion.CanBeCasted() || !_menuValue.IsEnabled(_medallion.Name) || !Utils.SleepCheck("_medallion")) return;
+            _medallion.UseAbility(_target);
+            Utils.Sleep(150 + Game.Ping, "_medallion");
 
             if (_orchid != null && _orchid.CanBeCasted() && _menuValue.IsEnabled(_orchid.Name) && Utils.SleepCheck("_orchid") && !_target.IsSilenced() && !_target.IsStunned() && !_target.IsHexed())
             {

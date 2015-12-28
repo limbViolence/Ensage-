@@ -1,3 +1,22 @@
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\ClinkzSharp\ClinkzSharp\bin\Release\ClinkzSharp.exe.config
 C:\Users\Mike\Desktop\ClinkzSharp\ClinkzSharp\bin\Release\ClinkzSharp.exe.config
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\ClinkzSharp.exe.config
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.csprojResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.Properties.Resources.resources
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.csproj.GenerateResource.Cache
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.TrustInfo.xml
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.exe
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\ClinkzSharp.exe.manifest
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\ClinkzSharp.application
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\ClinkzSharp.exe
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\ClinkzSharp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\Ensage.Common.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\Ensage.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\Ensage.Menu.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\SharpDX.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\EnsageSharp.Sandbox.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\bin\Release\Newtonsoft.Json.dll
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.exe.manifest
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\Ensage#\ClinkzSharp\ClinkzSharp\obj\Debug\ClinkzSharp.application
