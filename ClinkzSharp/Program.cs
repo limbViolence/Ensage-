@@ -87,6 +87,20 @@ namespace ClinkzSharp
             if (!_autoKillz || !Menu.Item("enable").GetValue<bool>()) return;
             _target = _me.ClosestToMouseTarget(1000);
 
+            //orbwalk
+            if (_target == null || (_target.IsValid && _target.IsVisible && _target.IsAlive && _target.Health > 0))
+            {
+            }
+            else
+            {
+                _target = null;
+            }
+            var canCancel = Orbwalking.CanCancelAnimation();
+            if (canCancel && (_target != null && !_target.IsVisible && !Orbwalking.AttackOnCooldown(_target)))
+            {
+                _target = _me.ClosestToMouseTarget(1000);
+            }
+
             if (_target == null || !_target.IsAlive || _target.IsInvul() || _target.IsIllusion) return;
 
             if (!_me.CanAttack() || !_me.CanCast()) return;
@@ -126,11 +140,10 @@ namespace ClinkzSharp
             Utils.Sleep(150 + Game.Ping, "_hex");
 
 
-            if (_orchid != null && _orchid.CanBeCasted() && _menuValue.IsEnabled(_orchid.Name) && Utils.SleepCheck("_orchid") && !_target.IsSilenced() && !_target.IsStunned() && !_target.IsHexed())
-            {
-                _orchid.UseAbility(_target);
-                Utils.Sleep(150 + Game.Ping, "_orchid");
-            }
+            if (_orchid == null || !_orchid.CanBeCasted() || !_menuValue.IsEnabled(_orchid.Name) ||
+                !Utils.SleepCheck("_orchid")) return;
+            _orchid.UseAbility(_target);
+            Utils.Sleep(150 + Game.Ping, "_orchid");
         }   
     private static void Game_OnWndProc(WndEventArgs args)
     {
