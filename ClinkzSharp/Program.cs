@@ -75,7 +75,7 @@ namespace ClinkzSharp
                 _orchid = _me.FindItem("item_orchid");
 
             if (_medallion == null)
-                _medallion = _me.FindItem("item_medallion");
+                _medallion = _me.FindItem("item_medallion_of_courage");
 
             if (!_menuvalueSet)
             {
@@ -109,6 +109,12 @@ namespace ClinkzSharp
                 Utils.Sleep(150 + Game.Ping, "_strafe");
             }
 
+            if (_medallion != null && _medallion.CanBeCasted() && Utils.SleepCheck("_medallion"))
+            {
+                _medallion.UseAbility(_target);
+                Utils.Sleep(150 + Game.Ping, "_medallion");
+            }
+
             if (_bkb != null && _bkb.CanBeCasted() && Utils.SleepCheck("_bkb") && _menuValue.IsEnabled(_bkb.Name) && _me.Distance2D(_target) <= 620)
             {
                 _bkb.UseAbility();
@@ -119,9 +125,6 @@ namespace ClinkzSharp
             _hex.UseAbility(_target);
             Utils.Sleep(150 + Game.Ping, "_hex");
 
-            if (_medallion == null || !_medallion.CanBeCasted() || !_menuValue.IsEnabled(_medallion.Name) || !Utils.SleepCheck("_medallion")) return;
-            _medallion.UseAbility(_target);
-            Utils.Sleep(150 + Game.Ping, "_medallion");
 
             if (_orchid != null && _orchid.CanBeCasted() && _menuValue.IsEnabled(_orchid.Name) && Utils.SleepCheck("_orchid") && !_target.IsSilenced() && !_target.IsStunned() && !_target.IsHexed())
             {
